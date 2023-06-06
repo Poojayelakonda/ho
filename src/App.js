@@ -65,7 +65,7 @@ const getNavItem=(item)=>{
   return (
     <div className="App">
       <NavBar navItems={navItems} getNavItem={getNavItem}/>
-      <h1>Home App</h1>
+      <h1 style={{color:"green"}}>Home App</h1>
       {
         postData.map(post=>{
           return selectedNavItem==post.category? <Card key={post.id} data={post} deletepost={deletepost}/>:null
